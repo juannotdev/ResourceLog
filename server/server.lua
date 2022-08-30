@@ -15,14 +15,14 @@ end
 
 if StartLog == true then
     AddEventHandler('onResourceStart', function(resourceName)
-        Wait(1000)
+        Wait(100)
             sendToDiscord(whcolor, "Resource Started: ", "`" ..resourceName.. "`", date)
         end)
     end
 
 if StopLog == true then
     AddEventHandler('onResourceStop', function(resourceName)
-        Wait(1000)
+        Wait(100)
             sendToDiscord(whcolor, "Resource Stopped: ", "`" ..resourceName.. "`", date)
         end)
     end
